@@ -1,0 +1,33 @@
+<!DOCTYPE html><html><head>
+    <script src="p5.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+<script src="./p5.play.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+  
+      <script type="module">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBNp1UM13kZ3L2hMaw7D7X8yRTCoQyctZU",
+  authDomain: "spain-e6adc.firebaseapp.com",
+  projectId: "spain-e6adc",
+  storageBucket: "spain-e6adc.firebasestorage.app",
+  messagingSenderId: "888574234539",
+  appId: "1:888574234539:web:9f8dc4cf6a083feba7ccee",
+  measurementId: "G-3H2MEKHT4E"
+};
+
+// Initialize Firebase
+const analytics = getAnalytics(app);
+const app = initializeApp(firebaseConfig);
