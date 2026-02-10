@@ -610,7 +610,7 @@ function randomPosGen() {
 }
 function draw() {
   
-  background("black");
+  background("white");
   //background(displayWidth/2, displayHeight/2);
   option1.x = wrong1.x;
   option2.x = wrong2.x;
