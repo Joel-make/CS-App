@@ -83,6 +83,7 @@ function preload() {
   star2 = loadImage("quizEnd2.png");
   star3 = loadImage("quizEnd3.png");
   doneI = loadImage("done.png");
+  extraI = loadImage("extra.png");
 }
 
 function setup() {
@@ -222,6 +223,11 @@ function setup() {
   valencia1.visible = false;
   valenciaB = createSprite(displayWidth/2 + 123.5 ,displayHeight/2 - 40,38,10);
   valenciaB.visible = false;
+
+   extra = createSprite(displayWidth/2-10,displayHeight-161.5,185,40);
+   extra.addImage(extraI);
+   extra.scale = 0.76;
+   extra.visible = false; 
 
   foodI = createSprite(displayWidth/2, displayHeight/2-70,400,400);
   foodI.addImage(foodInfo);
@@ -688,6 +694,14 @@ function draw() {
      valenciaM=false;
      //
      infoText="";
+  }
+  if(gamestate !=0)
+  {
+   extra.visible=true;
+  }
+  else 
+  {
+   extra.visible=false;
   }
   if(gamestate == 1)
    {
