@@ -13,6 +13,7 @@ var randomPos = 0;
 var infoText = "";
 var questionText = "";
 var option1 = "", option2="", option3="", optionC="";
+
 function preload() {
   // Load images
   hp = loadImage("home page.jpg");
@@ -1503,7 +1504,8 @@ function draw() {
             option1 = "Valencia";
             option2 = "La Rioja";
             option3 = "Navarra";
-            optionC = "Las Islas Canarias";
+            optionC = "Las Islas\n"+"Canarias";
+           
          }                    
          if(ques === 5)
          {
@@ -1520,7 +1522,7 @@ function draw() {
             option1 = "Madrid";
             option2 = "Navarra";
             option3 = "Asturias";
-            optionC = "Las Islas Baleares";
+            optionC = "Las Islas\n"+"Baleares";
          }
 
          if(ques === 7)
@@ -1775,15 +1777,31 @@ function draw() {
   if(gamestate ===4 || gamestate ===5)
   {
      fill("black");
-     textSize(30);
+     textSize(22);
      textFont("Cooper");
-     text(option1, wrong1.x-50,wrong1.y-20, 660, 220);
-     text(option2, wrong2.x-50,wrong2.y-20, 660, 220);
-     text(option3, wrong3.x-50,wrong3.y-20, 660, 220);
-     text(optionC, correct.x-50,correct.y-20, 660, 220);
+     text(option1, wrong1.x-50,wrong1.y-17, 660, 220);
+     text(option2, wrong2.x-50,wrong2.y-17, 660, 220);
+     text(option3, wrong3.x-50,wrong3.y-17, 660, 220);
+     text(optionC, correct.x-50,correct.y-17, 660, 220);
+     textSize(25);
      text(questionText, displayWidth/2-300,100, 1000, 220);
      
-  }  
+  } 
+  if(gamestate === 1)
+  {
+      fill("black");   
+      textSize(20);
+      textFont("cooper");
+      text("Click on the name\n"+ "of a region to learn\n"+"more about it!", displayWidth/2-430,displayHeight/2-100, 500, 220);
+
+  }
+if(gamestate === 2)
+  {
+      fill("black");   
+      textSize(20);
+      textFont("cooper");
+      text("Click on 'QUIT' to\n"+ "select another\n"+"region!", displayWidth/2-430,displayHeight/2-100, 500, 220);
+  }
   if(gamestate===3)
    {
       if(mode === 1)
