@@ -89,8 +89,7 @@ function preload() {
 function setup() {
   // Create a full-screen canvas
   createCanvas(displayWidth, displayHeight - 137);
-  ;
-
+  
   // Create a sprite for the home screen
   homeScreen = createSprite(displayWidth/2, displayHeight/2 - 70,displayWidth,displayHeight);
   homeScreen.addImage(hp);
