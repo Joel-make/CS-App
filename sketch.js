@@ -225,8 +225,8 @@ function setup() {
   valenciaB.visible = false;
 
    extra = createSprite(displayWidth/2-10,displayHeight-161.5,185,40);
-   extra.addImage(extraI);
-   extra.scale = 0.76;
+  // extra.addImage(extraI);
+  // extra.scale = 0.76;
    extra.visible = false; 
 
   foodI = createSprite(displayWidth/2, displayHeight/2-70,400,400);
